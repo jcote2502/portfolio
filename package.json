@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node api/index.js",
-    "production" : "npm install && node api/index.js",
+    "production" : "npm install bcrypt cors dotenv express express-rate-limit firebase-admin jsonwebtoken mongoose multer && node api/index.js",
     "build": "cd client && npm install && npm run build",
     "client": "cd client && npm start",
     "dev": "concurrently \"npm run start\" \"npm run client\""
